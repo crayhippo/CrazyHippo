@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 * {
@@ -69,7 +71,19 @@ h1 {
     z-index: -1;
     animation: wanderingBlob 10s ease infinite;
 }
-
+#lottie-container {
+        margin-bottom: 0vh;
+        transition: margin-bottom 0.5s;
+    }
+@media (max-width: 767px) {
+    /* .container {
+      padding-bottom: 10vh;
+    } */
+    #lottie-container {
+        margin-bottom: 10vh;
+    }
+    
+  }
 /*
 #lottie-container {
     position: absolute;
